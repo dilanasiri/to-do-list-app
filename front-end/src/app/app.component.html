@@ -1,0 +1,10 @@
+<h1>To Do List App</h1>
+
+<input id="newNotes">
+
+<button (click)="addNotes()">Add</button>
+
+<h3 *ngFor="let note of notes">
+  <b>*{{note.description}}</b>
+  <button (click)="deleteNotes(note.id)">Delete</button>
+</h3>
